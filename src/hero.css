@@ -1,0 +1,298 @@
+/* Responsive hero rules from the original invitation. Emerald artwork/colors
+ * are retained. Rem values compensate for its 15px root while the rest of
+ * this invitation keeps a 16px body font. */
+
+.hero {
+  isolation: isolate;
+  text-align: center;
+  place-items: center;
+  min-height: min(920px,100svh);
+  padding: 57px 24px 54px;
+  display: grid;
+  position: relative;
+  overflow: clip;
+}
+
+.hero-art, .hero-art:after, .hero-border, .petal-field {
+  z-index: -1;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-art>img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-art:after {
+  content: "";
+  z-index: 0;
+  background: radial-gradient(at 50% 45%,#102f2a48 30%,#102f2a0d 69%);
+}
+
+.hero-border {
+  outline-offset: 5px;
+  border: 1px solid #dcba7c61;
+  outline: 1px solid #dcba7c32;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+}
+
+.hero-border:before, .hero-border:after {
+  content: "";
+  border-top: 1px solid var(--gold);
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: -5px;
+}
+
+.hero-border:before {
+  border-left: 1px solid var(--gold);
+  left: -5px;
+}
+
+.hero-border:after {
+  border-right: 1px solid var(--gold);
+  right: -5px;
+}
+
+.hero-content {
+  width: min(100%,1080px);
+}
+
+.ganesha-medallion {
+  outline-offset: 5px;
+  background: radial-gradient(circle,#72948622,#102f2ac7 75%);
+  border: 1px solid #e3c38988;
+  border-radius: 50%;
+  outline: 1px solid #e3c38939;
+  place-items: center;
+  width: 102px;
+  height: 102px;
+  margin: 0 auto 25px;
+  display: grid;
+  box-shadow: 0 0 44px #e6a85b1c;
+}
+
+.ganesha-medallion img {
+  object-fit: contain;
+  width: 73px;
+  height: 76px;
+}
+
+.invocation, .hero-shloka {
+  font-family: var(--font-devanagari);
+  color: #f4d8a7;
+}
+
+.invocation {
+  margin: 0 auto 5px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.hero-shloka {
+  white-space: pre-line;
+  margin: 0 auto;
+  font-size: clamp(0.778125rem,1.4vw,0.928125rem);
+  line-height: 1.65;
+}
+
+.hero-eyebrow {
+  color: var(--gold);
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  margin: 26px 0 13px;
+  display: flex;
+  font-size: .628125rem;
+  letter-spacing: .21em;
+}
+
+.hero-eyebrow span {
+  background: #dcba7c85;
+  width: 28px;
+  height: 1px;
+}
+
+.hero h1 {
+  color: #fff1db;
+  text-shadow: 0 3px 22px #081e1ab0;
+  letter-spacing: -.051em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: .19em;
+  margin: 0;
+  font-size: clamp(3.375rem,7.45vw,7.171875rem);
+  display: flex;
+}
+
+.hero h1 i {
+  color: var(--gold);
+  font-size: .61em;
+  font-weight: 500;
+}
+
+.hero-nicknames {
+  font-family: var(--font-display);
+  color: #e3c894;
+  margin: 13px 0 0;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.hero-nicknames span {
+  margin: 0 .4em;
+  display: inline-block;
+}
+
+.hero-invitation {
+  color: #e5ecdf;
+  max-width: 430px;
+  margin: 17px auto 24px;
+  font-size: 0.853125rem;
+}
+
+.hero-location {
+  color: #e3d4b2;
+  margin: 20px auto 0;
+  font-size: 0.590625rem;
+}
+
+.petal-field {
+  z-index: 0;
+  overflow: hidden;
+}
+
+.petal-field i {
+  opacity: 0;
+  background: #a9bfa6;
+  border-radius: 90% 10%;
+  width: 10px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  box-shadow: inset 0 0 4px #ffe5ae70;
+}
+
+.petal-field i:nth-child(3n) {
+  background: #e5ad72;
+  width: 7px;
+  height: 11px;
+}
+
+.petal-field i:nth-child(4n) {
+  background: #f5d8a9;
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+}
+
+.hero-art .picture-fallback {
+  opacity: .3;
+  background: var(--maroon);
+}
+
+.hero-art .picture-fallback svg {
+  display: none;
+}
+
+@media (max-width:800px) {
+  .hero h1 {
+    font-size: clamp(3.09375rem,9vw,5.0625rem);
+  }
+}
+
+@media (max-width:620px) {
+  .hero {
+    padding: 39px 20px 37px;
+  }
+
+  .hero-border {
+    outline-offset: 4px;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .hero h1 {
+    justify-items: center;
+    gap: 0;
+    font-size: clamp(3.1875rem,13vw,5.15625rem);
+    display: grid;
+  }
+
+  .hero h1 i {
+    margin-block: 3px 2px;
+    line-height: .86;
+  }
+
+  .hero-art>img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-art:before, .hero-art:after {
+    content: "";
+    z-index: 0;
+    background: var(--hero-art) left center / auto 100% no-repeat;
+    opacity: .56;
+    width: 24%;
+    position: absolute;
+    inset: 0 auto 0 0;
+    -webkit-mask-image: linear-gradient(90deg,#000 32%,#0000);
+    mask-image: linear-gradient(90deg,#000 32%,#0000);
+  }
+
+  .hero-art:after {
+    background-position: 100%;
+    inset: 0 0 0 auto;
+    -webkit-mask-image: linear-gradient(270deg,#000 32%,#0000);
+    mask-image: linear-gradient(270deg,#000 32%,#0000);
+  }
+
+  .ganesha-medallion {
+    width: 76px;
+    height: 76px;
+    margin-bottom: 11px;
+  }
+
+  .ganesha-medallion img {
+    width: 55px;
+    height: 57px;
+  }
+
+  .invocation {
+    font-size: 0.890625rem;
+  }
+
+  .hero-eyebrow {
+    margin-block: 19px 8px;
+  }
+
+  .hero-nicknames {
+    margin-top: 7px;
+    font-size: 1.3125rem;
+  }
+
+  .hero-invitation {
+    max-width: 290px;
+    margin-block: 12px 17px;
+    font-size: 0.778125rem;
+  }
+
+  .hero-location {
+    margin-top: 16px;
+    font-size: 0.525rem;
+  }
+}

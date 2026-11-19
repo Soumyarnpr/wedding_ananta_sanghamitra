@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.vercel/
+OLD/
+.env*
+*.log
+groom-invitation/
+groom-invitation-deploy.tar.gz

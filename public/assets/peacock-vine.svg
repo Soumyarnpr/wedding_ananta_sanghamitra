@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" fill="none">
+  <defs>
+    <g id="mango-leaf">
+      <path d="M0 0C-12-30-11-65 0-92 11-65 12-30 0 0Z" fill="#d6b576" fill-opacity=".06"/>
+      <path d="M0 0C-12-30-11-65 0-92 11-65 12-30 0 0Zm0-4v-78M0-28l-6-9m6-7 6-9"/>
+    </g>
+    <g id="feather">
+      <path d="M0 0C-43-26-47-69-25-104-12-126-4-139 0-151c4 12 12 25 25 47C47-69 43-26 0 0Z"/>
+      <path d="M0-8c-31-25-32-60-16-85 9-14 14-27 16-38 2 11 7 24 16 38C32-68 31-33 0-8Z" opacity=".55"/>
+      <path d="M0-36c-21-14-22-35 0-58 22 23 21 44 0 58Z" fill="#d6b576" fill-opacity=".05"/>
+      <path d="M0-49c-10-8-11-20 0-33 11 13 10 25 0 33Z"/>
+      <path d="M0 12v-43m-1 20-25-25m27 23 25-25M-3-21l-31-29M3-22l31-28m-42 10-30-28m46 28 30-28M-13-57l-23-24m49 24 23-24" opacity=".7"/>
+    </g>
+  </defs>
+  <g stroke="#d6b576" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M250 628V202M246 598c-9-92-78-130-112-190-29-52-22-109-36-159m156 349c9-92 78-130 112-190 29-52 22-109 36-159"/>
+    <path d="M250 538c-41-50-104-43-151-83m151 38c35-66 82-84 129-106m-129 58c-37-64-62-116-60-185m60 110c29-56 65-88 76-141" opacity=".8"/>
+    <use href="#feather" transform="translate(250 214) scale(1.1)"/>
+    <use href="#feather" transform="translate(101 267) rotate(-28) scale(.65)"/>
+    <use href="#feather" transform="translate(399 267) rotate(28) scale(.65)"/>
+    <use href="#feather" transform="translate(191 278) rotate(-12) scale(.55)"/>
+    <use href="#feather" transform="translate(326 245) rotate(18) scale(.48)"/>
+    <use href="#mango-leaf" transform="translate(245 555) rotate(-64) scale(1.15)"/>
+    <use href="#mango-leaf" transform="translate(255 555) rotate(64) scale(1.15)"/>
+    <use href="#mango-leaf" transform="translate(215 485) rotate(-32)"/>
+    <use href="#mango-leaf" transform="translate(285 485) rotate(32)"/>
+    <use href="#mango-leaf" transform="translate(164 448) rotate(-62) scale(.92)"/>
+    <use href="#mango-leaf" transform="translate(336 448) rotate(62) scale(.92)"/>
+    <use href="#mango-leaf" transform="translate(131 395) rotate(-43) scale(.85)"/>
+    <use href="#mango-leaf" transform="translate(369 395) rotate(43) scale(.85)"/>
+    <use href="#mango-leaf" transform="translate(116 339) rotate(20) scale(.72)"/>
+    <use href="#mango-leaf" transform="translate(384 339) rotate(-20) scale(.72)"/>
+    <use href="#mango-leaf" transform="translate(249 346) rotate(-35) scale(.78)"/>
+    <use href="#mango-leaf" transform="translate(251 346) rotate(35) scale(.78)"/>
+    <path d="m250 244 5 7-5 7-5-7Zm0 177 5 7-5 7-5-7ZM62 333l4 6-4 6-4-6Zm376 0 4 6-4 6-4-6Z" fill="#d6b576" fill-opacity=".4" stroke-width=".8"/>
+    <g fill="#d6b576" stroke="none" opacity=".7">
+      <circle cx="250" cy="278" r="2"/><circle cx="250" cy="288" r="1"/>
+      <circle cx="58" cy="420" r="2"/><circle cx="442" cy="420" r="2"/>
+      <circle cx="168" cy="157" r="1.5"/><circle cx="332" cy="157" r="1.5"/>
+    </g>
+  </g>
+</svg>
