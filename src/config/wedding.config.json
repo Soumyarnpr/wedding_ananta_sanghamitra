@@ -203,13 +203,14 @@
 		]
 	},
 	"rsvp": {
-		"enabled": false,
+		"enabled": true,
 		"message": "Please let our family know if you’ll be joining us. We look forward to celebrating with you.",
 		"sheetUrl": "",
 		"formUrl": "",
 		"endpoint": "",
 		"maxGuests": 10,
-		"contacts": []
+		"contacts": [{ "name": "Smt. Kabita Pradhan", "phone": "+918457825262" },
+			{ "name": "Sri Arakhita Pradhan", "phone": "+919178213630" }]
 	},
 	"music": {
 		"enabled": true,
