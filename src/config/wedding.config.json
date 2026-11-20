@@ -209,8 +209,8 @@
 		"formUrl": "",
 		"endpoint": "",
 		"maxGuests": 10,
-		"contacts": [{ "name": "Smt. Kabita Pradhan", "phone": "+918457825262" },
-			{ "name": "Sri Arakhita Pradhan", "phone": "+919178213630" }]
+		"contacts": [{ "name": "Sri Arakhita Pradhan", "phone": "+918457825262" },
+			{ "name": "Sri Aditya Pradhan", "phone": "+919178213630" }]
 	},
 	"music": {
 		"enabled": true,
